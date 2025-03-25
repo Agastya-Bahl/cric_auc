@@ -7,7 +7,6 @@ import httpx
 import gspread
 from google.oauth2.service_account import Credentials
 from gspread_formatting import *
-from google.colab import drive
 
 # Define border format
 border_format = Borders(
@@ -164,7 +163,7 @@ def compute_wicket(type, batsman, score_dict, catch_dict):
     elif type == "Run out":
         score_dict[batsman["wicketCatchName"]] = score_dict.get(batsman["wicketCatchName"], 6) + 6
 
-def get_participant_points(score_dict, gw_no, best_xi_dict, missing_set, num_players=11, folder = ""):
+def get_participant_points(score_dict, gw_no, best_xi_dict, missing_set, num_players=11, folder = "."):
     participant_dict = {}
 
     with open(f"{folder}/teams/gw{gw_no}teams.csv", mode='r') as file:
@@ -278,7 +277,7 @@ def get_participant_points(score_dict, gw_no, best_xi_dict, missing_set, num_pla
         best_xi_dict[team] = best_xi
     return best_xi_dict
 
-def output_participant_points(best_xi_dict, missing_set, game, update_sheet, folder = ""):
+def output_participant_points(best_xi_dict, missing_set, game, update_sheet, folder = "."):
     max_per_row = 4
     if len(missing_set) > 0:
         print("MISSING PLAYERS:")
@@ -323,7 +322,7 @@ def output_participant_points(best_xi_dict, missing_set, game, update_sheet, fol
         print(f"{rank}) {team}: {points}")
     return standings
 
-def print_to_sheets(game, data, standings, folder = ""):
+def print_to_sheets(game, data, standings, folder = "."):
     # Authenticate with Google Sheets API
     creds = Credentials.from_service_account_file(f"{folder}/credentials.json", scopes=["https://www.googleapis.com/auth/spreadsheets"])
     client = gspread.authorize(creds)
@@ -355,7 +354,7 @@ def print_to_sheets(game, data, standings, folder = ""):
     format_cell_range(sheet, f"A1:{get_column_letter(game + 3)}1", CellFormat(textFormat=TextFormat(bold=True), horizontalAlignment='CENTER'))
 
 
-def main(game, update_sheet = True, folder = ""):
+def main(game, update_sheet = True, folder = "."):
     to_open = f"{folder}/ids/game{game}ids.csv"
     with open(to_open, mode='r') as file:
         data = csv.reader(file)
@@ -391,5 +390,4 @@ def main(game, update_sheet = True, folder = ""):
             
 
 if __name__ == "__main__":
-    drive.mount('/content/drive')
-    main(1, update_sheet = True, folder = "drive/MyDrive/Cric Auc")
+    main(1, update_sheet = True, folder = ".")
