@@ -1,5 +1,3 @@
-import requests
-import json
 import csv
 import re
 import time
@@ -7,6 +5,7 @@ import httpx
 import gspread
 from google.oauth2.service_account import Credentials
 from gspread_formatting import *
+import argparse
 
 # Define border format
 border_format = Borders(
@@ -163,9 +162,7 @@ def compute_wicket(type, batsman, score_dict, catch_dict):
     elif type == "Run out":
         score_dict[batsman["wicketCatchName"]] = score_dict.get(batsman["wicketCatchName"], 6) + 6
 
-def get_participant_points(score_dict, gw_no, best_xi_dict, missing_set, num_players=11, folder = "."):
-    participant_dict = {}
-
+def get_participant_points(score_dict, gw_no, participant_dict, best_xi_dict, missing_set, num_players=11, folder = "."):
     with open(f"{folder}/teams/gw{gw_no}teams.csv", mode='r') as file:
         reader = csv.reader(file)
         key = "feewd XI"
@@ -275,9 +272,9 @@ def get_participant_points(score_dict, gw_no, best_xi_dict, missing_set, num_pla
         best_xi = conf_bat + conf_ar[:5-batsmen_count] + [(wk, wk_points)] + conf_ar[5-batsmen_count:] + conf_bowl
                 
         best_xi_dict[team] = best_xi
-    return best_xi_dict
+    return participant_dict
 
-def output_participant_points(best_xi_dict, missing_set, game, update_sheet, folder = "."):
+def output_participant_points(best_xi_dict, missing_set, game, folder = "."):
     max_per_row = 4
     if len(missing_set) > 0:
         print("MISSING PLAYERS:")
@@ -330,9 +327,8 @@ def print_to_sheets(game, data, standings, folder = "."):
     doc = client.open_by_key(SHEET_ID)
     no_sheets = len(doc.worksheets())
     if no_sheets < game:
-        sheet = doc.add_worksheet(title=f"GAME {game} TABLE", rows="1000", cols="26") 
-    else:
-        sheet = doc.get_worksheet(game-1)
+        doc.add_worksheet(title=f"GAME {game} TABLE", rows="1000", cols="26") 
+    sheet = doc.get_worksheet(game-1)
     
     # Use the first sheet
     rankings = []
@@ -345,7 +341,7 @@ def print_to_sheets(game, data, standings, folder = "."):
     rankings = list(map(list, zip(*columns)))
     rankings[0][game + 1] = f"Game {game}"
     rankings[0][game + 2] = "TOTAL"
-    for i in range(7):
+    for i in range(len(rankings)-1):
         rankings[i+1][game + 2] = sum(int(rankings[i+1][j]) for j in range(2, game + 2))
     sheet.update(values = rankings, range_name = "A1")
     sheet.update(values = data, range_name = "B15")
@@ -353,8 +349,17 @@ def print_to_sheets(game, data, standings, folder = "."):
     format_cell_range(sheet, f"A1:{get_column_letter(game + 3)}8", CellFormat(borders=border_format))
     format_cell_range(sheet, f"A1:{get_column_letter(game + 3)}1", CellFormat(textFormat=TextFormat(bold=True), horizontalAlignment='CENTER'))
 
+def output_unsold(participant_dict, folder = "."):
+    print("\nUNSOLD:")
+    players = [v[0].removesuffix(" (WK)") for s in participant_dict.values() for v in s]
+    with open (f"{folder}/calcSheet.csv", mode = 'r') as file:
+        data = csv.reader(file)
+        for line in data:
+            if line[0].split(":")[0] not in players:
+                print(line[0])
 
-def main(game, update_sheet = True, folder = "."):
+
+def main(game, update_sheet = True, folder = ".", print_unsold = False):
     to_open = f"{folder}/ids/game{game}ids.csv"
     with open(to_open, mode='r') as file:
         data = csv.reader(file)
@@ -367,15 +372,18 @@ def main(game, update_sheet = True, folder = "."):
     score_dict = {}
     best_xi_dict = {}
     missing_set = set()
+    participant_dict = {}
 
     for event_id, e_dict in event_ids.items():
         data = get_data(event_id, score_dict, e_dict["team_choice"])
         # print(data)
         score_dict = dict(sorted(score_dict.items(), key=lambda item: item[1], reverse=True))
         missing_set.clear()
-        get_participant_points(score_dict, e_dict["gw_no"], best_xi_dict, missing_set, folder = folder)
+        get_participant_points(score_dict, e_dict["gw_no"], participant_dict, best_xi_dict, missing_set, folder = folder)
 
-    standings = output_participant_points(best_xi_dict, missing_set, game, update_sheet, folder = folder)
+    standings = output_participant_points(best_xi_dict, missing_set, game, folder = folder)
+    if print_unsold:
+        output_unsold(participant_dict, folder = folder)
 
     
     with open(f"{folder}/calcSheet.csv", mode = 'w') as file:
@@ -390,4 +398,8 @@ def main(game, update_sheet = True, folder = "."):
             
 
 if __name__ == "__main__":
-    main(1, update_sheet = True, folder = ".")
+    parser = argparse.ArgumentParser()
+    
+    parser.add_argument("--game", type=int, default=0, help="Game number (default: Current)")
+    args = parser.parse_args()
+    main(args.game or 1, update_sheet = True, folder = ".", print_unsold = True)
