@@ -7,6 +7,20 @@ from google.oauth2.service_account import Credentials
 from gspread_formatting import *
 import argparse
 import os
+from datetime import datetime
+
+team_short_forms = {
+    "Mumbai Indians": "MI",
+    "Chennai Super Kings": "CSK",
+    "Royal Challengers Bengaluru": "RCB",
+    "Kolkata Knight Riders": "KKR",
+    "Sunrisers Hyderabad": "SRH",
+    "Rajasthan Royals": "RR",
+    "Delhi Capitals": "DC",
+    "Punjab Kings": "PBKS",
+    "Lucknow Super Giants": "LSG",
+    "Gujarat Titans": "GT",
+}
 
 # Define border format
 border_format = Borders(
@@ -16,6 +30,35 @@ border_format = Borders(
     right=Border("SOLID"),
 )
 
+
+def set_up_ids(folder="."):
+    base = 13485081
+    start_date = start_date = datetime.strptime("2025-03-22", "%Y-%m-%d")
+    id_dict = {}
+    team_count = {v : 0 for v in team_short_forms.values()}
+    with open(f"{folder}/utils/schedule.csv", mode="r") as file:
+        reader = csv.reader(file)
+        for lines in reader:
+            id_dict[base + int(lines[0]) - 1] = {
+                "week": ((datetime.strptime(lines[2].strip(), "%Y-%m-%d") - start_date).days // 7) + 1,
+                "team1": team_short_forms[lines[5].strip()],
+                "team2": team_short_forms[lines[6].strip()],
+            }
+    game_dict = {i : [] for i in range(1, 15)}
+    for i, td in id_dict.items():
+        week, t1, t2 = td["week"], td["team1"], td["team2"]
+        team_count[t1] += 1
+        team_count[t2] += 1
+        if team_count[t1] == team_count[t2]:
+            game_dict[team_count[t1]].append([i, week])
+        else:
+            game_dict[team_count[t1]].append([i, week, t1])
+            game_dict[team_count[t2]].append([i, week, t2])
+            
+    for i, rows in game_dict.items():
+        with open(f"{folder}/ids/game{i}ids.csv", mode="w") as file:
+            writer = csv.writer(file)
+            writer.writerows(rows)
 
 def get_column_letter(n):
     result = ""
@@ -203,41 +246,44 @@ def get_participant_points(
     num_players=11,
     folder=".",
 ):
-    with open(f"{folder}/teams/gw{gw_no}teams.csv", mode="r") as file:
-        reader = csv.reader(file)
-        key = "feewd XI"
-        role = None
-        player_lst, point_lst, role_lst = [], [], []
+    try:
+        with open(f"{folder}/teams/gw{gw_no}teams.csv", mode="r") as file:
+            reader = csv.reader(file)
+            key = "feewd XI"
+            role = None
+            player_lst, point_lst, role_lst = [], [], []
 
-        for line in reader:
-            for text in line:
-                text = text.strip()  # Remove spaces
-                text = re.sub(r"\s+", " ", text)  # Normalize spaces
+            for line in reader:
+                for text in line:
+                    text = text.strip()  # Remove spaces
+                    text = re.sub(r"\s+", " ", text)  # Normalize spaces
 
-                if text.startswith("*"):  # New team detected
-                    update_dict_points(
-                        participant_dict, key, player_lst, point_lst, role_lst
-                    )
-                    key = text[1:].strip()
-                    player_lst, point_lst, role_lst = [], [], []
-                elif text.lower() in ["batsmen", "all-rounders", "bowlers"]:
-                    role = text.lower()
-                elif text:  # This is a player
-                    player_name = text[:-5] if text.endswith("(WK)") else text
-                    if (
-                        player_name in score_dict
-                        and player_team_gw_dict[player_name] == gw_no
-                    ):
-                        player_lst.append(text)
-                        point_lst.append(score_dict[player_name])
-                        role_lst.append(role)
-                    else:
-                        if (player_name not in player_team_gw_dict) or (
-                            player_team_gw_dict[player_name] == gw_no
+                    if text.startswith("*"):  # New team detected
+                        update_dict_points(
+                            participant_dict, key, player_lst, point_lst, role_lst
+                        )
+                        key = text[1:].strip()
+                        player_lst, point_lst, role_lst = [], [], []
+                    elif text.lower() in ["batsmen", "all-rounders", "bowlers"]:
+                        role = text.lower()
+                    elif text:  # This is a player
+                        player_name = text[:-5] if text.endswith("(WK)") else text
+                        if (
+                            player_name in score_dict
+                            and player_team_gw_dict[player_name] == gw_no
                         ):
-                            missing_set.add(player_name)  # Missing player warning
+                            player_lst.append(text)
+                            point_lst.append(score_dict[player_name])
+                            role_lst.append(role)
+                        else:
+                            if (player_name not in player_team_gw_dict) or (
+                                player_team_gw_dict[player_name] == gw_no
+                            ):
+                                missing_set.add(player_name)  # Missing player warning
 
-        update_dict_points(participant_dict, key, player_lst, point_lst, role_lst)
+            update_dict_points(participant_dict, key, player_lst, point_lst, role_lst)
+    except FileNotFoundError:
+        pass
 
 
 def update_dict_points(participant_dict, key, player_lst, point_lst, role_lst):
@@ -420,7 +466,7 @@ def print_to_sheets(game, data, standings, folder="."):
         rankings = doc.get_worksheet(game - 2).get_all_values()[:8]
     columns = list(map(list, zip(*rankings)))
     for i, p in enumerate(columns[1][1:], start=1):
-        columns[game + 1][i] = standings[p]
+        columns[game + 1][i] = standings[p] if p in standings else 0
     columns[game + 1][0] = f"Game {game}"
     columns[game + 2][0] = "TOTAL"
     for i in range(len(columns[0]) - 1):
@@ -448,10 +494,10 @@ def print_to_sheets(game, data, standings, folder="."):
     )
 
 
-def output_unsold(participant_dict, folder="."):
+def output_unsold(participant_dict, game, folder="."):
     print("\nUNSOLD:")
     players = [v[0].removesuffix(" (WK)") for s in participant_dict.values() for v in s]
-    with open(f"{folder}/calcSheet.csv", mode="r") as file:
+    with open(f"{folder}/calcSheet{game}.csv", mode="r") as file:
         data = csv.reader(file)
         for line in data:
             if line[0].split(":")[0] not in players:
@@ -503,13 +549,14 @@ def main(game, update_sheet=True, folder=".", print_unsold=False):
     standings = output_participant_points(
         best_xi_dict, missing_set, game, folder=folder
     )
-    if print_unsold:
-        output_unsold(participant_dict, folder=folder)
 
-    with open(f"{folder}/calcSheet.csv", mode="w") as file:
+    with open(f"{folder}/calcSheets/calcSheet{game}.csv", mode="w") as file:
         writer = csv.writer(file)
         for k, v in score_dict.items():
             writer.writerow([f"{k}: {v}"])
+
+    if print_unsold:
+        output_unsold(participant_dict, game, folder=folder + "/calcSheets")
 
     if update_sheet and standings:
         with open(f"{folder}/points/game{game}points.csv", newline="") as f:
@@ -518,17 +565,32 @@ def main(game, update_sheet=True, folder=".", print_unsold=False):
 
 
 if __name__ == "__main__":
+    gen_ids = False
+    if gen_ids:
+        set_up_ids()
+    
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
-        "--game", type=int, default=0, help="Game number (default: Current)"
+        "--game", type=str, default=0, help="Game number (default: Current)"
     )
     args = parser.parse_args()
     folder_path = "ids"
-    if args.game == 0:
+    if "-" in args.game:
+        match = re.fullmatch(r"(\d+)-(\d+)", args.game)
+        if match:
+            n1, n2 = map(int, match.groups())  # Convert to integers
+            for i in range(n1, n2 + 1):  # Loop from n1 to n2 (inclusive)
+                main(
+                    i,
+                    update_sheet=True,
+                    folder=".",
+                    print_unsold=True,
+                )
+    elif args.game.lower() == "all":
         for file_name in os.listdir(folder_path):
             file_path = os.path.join(folder_path, file_name)
-            print(file_name)
+            print(f"Game {extract_number(file_name)}")
             main(
                 extract_number(file_name),
                 update_sheet=True,
@@ -536,4 +598,4 @@ if __name__ == "__main__":
                 print_unsold=True,
             )
     else:
-        main(args.game or 1, update_sheet=True, folder=".", print_unsold=True)
+        main(int(args.game) or 1, update_sheet=True, folder=".", print_unsold=True)
