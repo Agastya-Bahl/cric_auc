@@ -35,16 +35,20 @@ def set_up_ids(folder="."):
     base = 13485081
     start_date = start_date = datetime.strptime("2025-03-22", "%Y-%m-%d")
     id_dict = {}
-    team_count = {v : 0 for v in team_short_forms.values()}
+    team_count = {v: 0 for v in team_short_forms.values()}
     with open(f"{folder}/utils/schedule.csv", mode="r") as file:
         reader = csv.reader(file)
         for lines in reader:
             id_dict[base + int(lines[0]) - 1] = {
-                "week": ((datetime.strptime(lines[2].strip(), "%Y-%m-%d") - start_date).days // 7) + 1,
+                "week": (
+                    (datetime.strptime(lines[2].strip(), "%Y-%m-%d") - start_date).days
+                    // 7
+                )
+                + 1,
                 "team1": team_short_forms[lines[5].strip()],
                 "team2": team_short_forms[lines[6].strip()],
             }
-    game_dict = {i : [] for i in range(1, 15)}
+    game_dict = {i: [] for i in range(1, 15)}
     for i, td in id_dict.items():
         week, t1, t2 = td["week"], td["team1"], td["team2"]
         team_count[t1] += 1
@@ -54,11 +58,19 @@ def set_up_ids(folder="."):
         else:
             game_dict[team_count[t1]].append([i, week, t1])
             game_dict[team_count[t2]].append([i, week, t2])
-            
+
     for i, rows in game_dict.items():
         with open(f"{folder}/ids/game{i}ids.csv", mode="w") as file:
             writer = csv.writer(file)
-            writer.writerows(rows)
+            for row in rows:
+                writer.writerow(
+                    row[:-1]
+                    + [
+                        str(row[-1])
+                        + f'\t# {id_dict[row[0]]["team1"]} vs {id_dict[row[0]]["team2"]}'
+                    ]
+                )
+
 
 def get_column_letter(n):
     result = ""
@@ -444,15 +456,7 @@ def output_participant_points(best_xi_dict, missing_set, game, folder="."):
     return standings
 
 
-def print_to_sheets(game, data, standings, folder="."):
-    # Authenticate with Google Sheets API
-    creds = Credentials.from_service_account_file(
-        f"{folder}/credentials.json",
-        scopes=["https://www.googleapis.com/auth/spreadsheets"],
-    )
-    client = gspread.authorize(creds)
-    SHEET_ID = "1AEn2LG9bfTAQdZonbeNe5xg6EI9LXfpf5gcVJ5yD0eM"
-    doc = client.open_by_key(SHEET_ID)
+def print_to_sheets(doc, game, data, standings, folder="."):
     no_sheets = len(doc.worksheets())
     if no_sheets < game:
         doc.add_worksheet(title=f"GAME {game} TABLE", rows="1000", cols="26")
@@ -494,6 +498,27 @@ def print_to_sheets(game, data, standings, folder="."):
     )
 
 
+def print_player_rank_to_sheet(doc, global_score_dict, folder="."):
+    no_sheets = len(doc.worksheets())
+    player_rank_sheet = doc.get_worksheet(no_sheets - 1)
+    player_rank_sheet.update(
+        values=[["Rank", "Player", "Points"]]
+        + [[i, k, v] for i, (k, v) in enumerate(global_score_dict.items(), 1)],
+        range_name="A1",
+    )
+    # Apply to a range (e.g., A1:D10)
+    format_cell_range(
+        player_rank_sheet,
+        f"A1:{get_column_letter(3)}{len(global_score_dict) + 1}",
+        CellFormat(borders=border_format, horizontalAlignment="CENTER"),
+    )
+    format_cell_range(
+        player_rank_sheet,
+        f"A1:{get_column_letter(3)}1",
+        CellFormat(textFormat=TextFormat(bold=True), horizontalAlignment="CENTER"),
+    )
+
+
 def output_unsold(participant_dict, game, folder="."):
     print("\nUNSOLD:")
     players = [v[0].removesuffix(" (WK)") for s in participant_dict.values() for v in s]
@@ -509,10 +534,10 @@ def extract_number(s):
     return int(num_str) if num_str else None  # Convert to int if not empty
 
 
-def main(game, update_sheet=True, folder=".", print_unsold=False):
+def main(doc, game, global_score_dict, update_sheet=True, folder=".", print_unsold=False):
     to_open = f"{folder}/ids/game{game}ids.csv"
     with open(to_open, mode="r") as file:
-        data = csv.reader(file)
+        data = csv.reader((line.split("#")[0].strip() for line in file))
         event_ids = {}
         for lines in data:
             event_ids[lines[0]] = {
@@ -550,6 +575,9 @@ def main(game, update_sheet=True, folder=".", print_unsold=False):
         best_xi_dict, missing_set, game, folder=folder
     )
 
+    for p, v in score_dict.items():
+        global_score_dict[p] = global_score_dict.get(p, 0) + v
+
     with open(f"{folder}/calcSheets/calcSheet{game}.csv", mode="w") as file:
         writer = csv.writer(file)
         for k, v in score_dict.items():
@@ -561,14 +589,24 @@ def main(game, update_sheet=True, folder=".", print_unsold=False):
     if update_sheet and standings:
         with open(f"{folder}/points/game{game}points.csv", newline="") as f:
             data = list(csv.reader(f))
-        print_to_sheets(game, data, standings, folder=folder)
+        print_to_sheets(doc, game, data, standings, folder=folder)
 
 
 if __name__ == "__main__":
+    # Authenticate with Google Sheets API
+    creds = Credentials.from_service_account_file(
+        f"credentials.json",
+        scopes=["https://www.googleapis.com/auth/spreadsheets"],
+    )
+    client = gspread.authorize(creds)
+    SHEET_ID = "1AEn2LG9bfTAQdZonbeNe5xg6EI9LXfpf5gcVJ5yD0eM"
+    doc = client.open_by_key(SHEET_ID)
+    
+    global_score_dict = {}
     gen_ids = False
     if gen_ids:
         set_up_ids()
-    
+
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -582,7 +620,9 @@ if __name__ == "__main__":
             n1, n2 = map(int, match.groups())  # Convert to integers
             for i in range(n1, n2 + 1):  # Loop from n1 to n2 (inclusive)
                 main(
+                    doc,
                     i,
+                    global_score_dict,
                     update_sheet=True,
                     folder=".",
                     print_unsold=True,
@@ -592,10 +632,23 @@ if __name__ == "__main__":
             file_path = os.path.join(folder_path, file_name)
             print(f"Game {extract_number(file_name)}")
             main(
+                doc,
                 extract_number(file_name),
+                global_score_dict,
                 update_sheet=True,
                 folder=".",
                 print_unsold=True,
             )
+        global_score_dict = dict(
+            sorted(global_score_dict.items(), key=lambda item: item[1], reverse=True)
+        )
+        print_player_rank_to_sheet(doc, global_score_dict, folder=".")
     else:
-        main(int(args.game) or 1, update_sheet=True, folder=".", print_unsold=True)
+        main(
+            doc,
+            int(args.game) or 1,
+            global_score_dict,
+            update_sheet=True,
+            folder=".",
+            print_unsold=True,
+        )
