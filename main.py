@@ -67,7 +67,7 @@ def set_up_ids(folder="."):
                     row[:-1]
                     + [
                         str(row[-1])
-                        + f'\t# {id_dict[row[0]]["team1"]} vs {id_dict[row[0]]["team2"]}'
+                        + f'    # {id_dict[row[0]]["team1"]} vs {id_dict[row[0]]["team2"]}'
                     ]
                 )
 
@@ -502,19 +502,19 @@ def print_player_rank_to_sheet(doc, global_score_dict, folder="."):
     no_sheets = len(doc.worksheets())
     player_rank_sheet = doc.get_worksheet(no_sheets - 1)
     player_rank_sheet.update(
-        values=[["Rank", "Player", "Points"]]
-        + [[i, k, v] for i, (k, v) in enumerate(global_score_dict.items(), 1)],
+        values=[["Rank", "Player", "Points", "Avg. Points"]]
+        + [[i, k, v[0], v[1]] for i, (k, v) in enumerate(global_score_dict.items(), 1)],
         range_name="A1",
     )
     # Apply to a range (e.g., A1:D10)
     format_cell_range(
         player_rank_sheet,
-        f"A1:{get_column_letter(3)}{len(global_score_dict) + 1}",
+        f"A1:{get_column_letter(4)}{len(global_score_dict) + 1}",
         CellFormat(borders=border_format, horizontalAlignment="CENTER"),
     )
     format_cell_range(
         player_rank_sheet,
-        f"A1:{get_column_letter(3)}1",
+        f"A1:{get_column_letter(4)}1",
         CellFormat(textFormat=TextFormat(bold=True), horizontalAlignment="CENTER"),
     )
 
@@ -576,7 +576,8 @@ def main(doc, game, global_score_dict, update_sheet=True, folder=".", print_unso
     )
 
     for p, v in score_dict.items():
-        global_score_dict[p] = global_score_dict.get(p, 0) + v
+        curr = global_score_dict.get(p, [0, 0])
+        global_score_dict[p] = [curr[0] + v, curr[1] + 1]
 
     with open(f"{folder}/calcSheets/calcSheet{game}.csv", mode="w") as file:
         writer = csv.writer(file)
@@ -639,8 +640,9 @@ if __name__ == "__main__":
                 folder=".",
                 print_unsold=True,
             )
+        global_score_dict = {k : [v[0], v[0] / v[1]] for k, v in global_score_dict.items()}
         global_score_dict = dict(
-            sorted(global_score_dict.items(), key=lambda item: item[1], reverse=True)
+            sorted(global_score_dict.items(), key=lambda item: item[1][1], reverse=True)
         )
         print_player_rank_to_sheet(doc, global_score_dict, folder=".")
     else:
