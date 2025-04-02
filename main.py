@@ -63,11 +63,13 @@ def set_up_ids(folder="."):
         with open(f"{folder}/ids/game{i}ids.csv", mode="w") as file:
             writer = csv.writer(file)
             for row in rows:
+                spaces = 20 - len(','.join(map(str, row)))
                 writer.writerow(
                     row[:-1]
                     + [
                         str(row[-1])
-                        + f'    # {id_dict[row[0]]["team1"]} vs {id_dict[row[0]]["team2"]}'
+                        + spaces * " "
+                        + f'# {id_dict[row[0]]["team1"]} vs {id_dict[row[0]]["team2"]}'
                     ]
                 )
 
@@ -534,7 +536,9 @@ def extract_number(s):
     return int(num_str) if num_str else None  # Convert to int if not empty
 
 
-def main(doc, game, global_score_dict, update_sheet=True, folder=".", print_unsold=False):
+def main(
+    doc, game, global_score_dict, update_sheet=True, folder=".", print_unsold=False
+):
     to_open = f"{folder}/ids/game{game}ids.csv"
     with open(to_open, mode="r") as file:
         data = csv.reader((line.split("#")[0].strip() for line in file))
@@ -602,7 +606,7 @@ if __name__ == "__main__":
     client = gspread.authorize(creds)
     SHEET_ID = "1AEn2LG9bfTAQdZonbeNe5xg6EI9LXfpf5gcVJ5yD0eM"
     doc = client.open_by_key(SHEET_ID)
-    
+
     global_score_dict = {}
     gen_ids = False
     if gen_ids:
@@ -640,7 +644,9 @@ if __name__ == "__main__":
                 folder=".",
                 print_unsold=True,
             )
-        global_score_dict = {k : [v[0], v[0] / v[1]] for k, v in global_score_dict.items()}
+        global_score_dict = {
+            k: [v[0], v[0] / v[1]] for k, v in global_score_dict.items()
+        }
         global_score_dict = dict(
             sorted(global_score_dict.items(), key=lambda item: item[1][1], reverse=True)
         )
