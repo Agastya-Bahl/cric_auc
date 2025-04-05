@@ -460,7 +460,7 @@ def output_participant_points(best_xi_dict, missing_set, game, folder="."):
 
 def print_to_sheets(doc, game, data, standings, folder="."):
     no_sheets = len(doc.worksheets())
-    if no_sheets < game:
+    if no_sheets < game + 1:
         doc.add_worksheet(title=f"GAME {game} TABLE", rows="1000", cols="26")
     sheet = doc.get_worksheet(game - 1)
 
@@ -645,10 +645,10 @@ if __name__ == "__main__":
                 print_unsold=True,
             )
         global_score_dict = {
-            k: [v[0], v[0] / v[1]] for k, v in global_score_dict.items()
+            k: [v[0], round(v[0] / v[1], 2)] for k, v in global_score_dict.items()
         }
         global_score_dict = dict(
-            sorted(global_score_dict.items(), key=lambda item: item[1][1], reverse=True)
+            sorted(global_score_dict.items(), key=lambda item: item[1][0], reverse=True)
         )
         print_player_rank_to_sheet(doc, global_score_dict, folder=".")
     else:
