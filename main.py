@@ -35,19 +35,26 @@ def set_up_ids(folder="."):
     base = 13485081
     start_date = start_date = datetime.strptime("2025-03-22", "%Y-%m-%d")
     id_dict = {}
+    week_dict = {i: {} for i in range(1, 10)}
     team_count = {v: 0 for v in team_short_forms.values()}
     with open(f"{folder}/utils/schedule.csv", mode="r") as file:
         reader = csv.reader(file)
         for lines in reader:
+            week = (
+                (datetime.strptime(lines[2].strip(), "%Y-%m-%d") - start_date).days // 7
+            ) + 1
             id_dict[base + int(lines[0]) - 1] = {
-                "week": (
-                    (datetime.strptime(lines[2].strip(), "%Y-%m-%d") - start_date).days
-                    // 7
-                )
-                + 1,
+                "week": week,
                 "team1": team_short_forms[lines[5].strip()],
                 "team2": team_short_forms[lines[6].strip()],
             }
+            week_dict[week][team_short_forms[lines[5].strip()]] = (
+                week_dict[week].get(team_short_forms[lines[5].strip()], 0) + 1
+            )
+            week_dict[week][team_short_forms[lines[6].strip()]] = (
+                week_dict[week].get(team_short_forms[lines[6].strip()], 0) + 1
+            )
+        print(week_dict)
     game_dict = {i: [] for i in range(1, 15)}
     for i, td in id_dict.items():
         week, t1, t2 = td["week"], td["team1"], td["team2"]
@@ -63,7 +70,7 @@ def set_up_ids(folder="."):
         with open(f"{folder}/ids/game{i}ids.csv", mode="w") as file:
             writer = csv.writer(file)
             for row in rows:
-                spaces = 20 - len(','.join(map(str, row)))
+                spaces = 20 - len(",".join(map(str, row)))
                 writer.writerow(
                     row[:-1]
                     + [
@@ -127,7 +134,7 @@ def compute_innings(inning, score_dict, catch_dict, choice):
 def compute_bowler(bowler, score_dict):
     name = bowler["player"]["name"]
     overs = bowler["over"]
-    economy = (bowler["run"] / overs) if overs > 0 else 8
+    economy = (bowler["run"] / convert_overs(overs)) if overs > 0 else 8
     wickets = bowler["wicket"]
     maidens = bowler["maiden"]
     score = (
@@ -137,6 +144,12 @@ def compute_bowler(bowler, score_dict):
         + wicket_bonus(wickets)
     )
     score_dict[name] = score_dict.get(name, 4) + score
+
+
+def convert_overs(overs):
+    full_overs = int(overs)
+    balls = round((overs % 1) * 10)  # e.g. 0.4 → 4 balls
+    return full_overs + balls / 6
 
 
 def economy_score(economy, overs):
@@ -459,7 +472,8 @@ def output_participant_points(best_xi_dict, missing_set, game, folder="."):
 
 
 def print_to_sheets(doc, game, data, standings, folder="."):
-    no_sheets = len(doc.worksheets())
+    worksheets = doc.worksheets()
+    no_sheets = len(worksheets)
     if no_sheets < game + 1:
         doc.add_worksheet(title=f"GAME {game} TABLE", rows="1000", cols="26")
     sheet = doc.get_worksheet(game - 1)
@@ -650,6 +664,21 @@ if __name__ == "__main__":
         global_score_dict = dict(
             sorted(global_score_dict.items(), key=lambda item: item[1][0], reverse=True)
         )
+        with open("fun.csv", mode="r") as file:
+            fun_dict = {}
+            reader = csv.reader(file)
+            for lines in reader:
+                if lines[0] in global_score_dict and int(lines[1] or 0) > 0:
+                    fun_dict[lines[0]] = round(
+                        global_score_dict[lines[0]][1]
+                        + global_score_dict[lines[0]][0] / int(lines[1]),
+                        2,
+                    )
+            fun_dict = dict(
+                sorted(fun_dict.items(), key=lambda item: item[1], reverse=True)
+            )
+            for k, v in fun_dict.items():
+                print(f"{k}: {v}")
         print_player_rank_to_sheet(doc, global_score_dict, folder=".")
     else:
         main(
