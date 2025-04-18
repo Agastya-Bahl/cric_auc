@@ -4,5 +4,5 @@
 13485102,3,CSK      # PBKS vs CSK
 13485103,3          # GT vs RR
 13485104,3,RCB      # RCB vs DC
-13485107,4,PBKS     # SRH vs PBKS
-13485109,4,DC       # DC vs MI
+13485108,4,PBKS     # SRH vs PBKS
+13485110,4,DC       # DC vs MI

@@ -8,6 +8,7 @@ from gspread_formatting import *
 import argparse
 import os
 from datetime import datetime
+import json
 
 team_short_forms = {
     "Mumbai Indians": "MI",
@@ -40,6 +41,8 @@ def set_up_ids(folder="."):
     with open(f"{folder}/utils/schedule.csv", mode="r") as file:
         reader = csv.reader(file)
         for lines in reader:
+            if base + int(lines[0]) - 1 == 13485105:
+                base += 1
             week = (
                 (datetime.strptime(lines[2].strip(), "%Y-%m-%d") - start_date).days // 7
             ) + 1
@@ -95,6 +98,11 @@ def get_data(event_id, score_dict, team_choice):
     with httpx.Client(http2=True) as client:
         response = client.get(url)
         data = response.json()
+    print(response.status_code)
+    if (response.status_code == 403):
+        if os.path.exists(f"data/{event_id}.json"):
+            with open(f"data/{event_id}.json", "r") as file:
+                data = json.load(file)
 
     if "innings" not in data:
         return None
@@ -127,7 +135,6 @@ def compute_innings(inning, score_dict, catch_dict, choice):
         if batsman["player"]["name"] not in score_dict and choice != "bowling":
             score_dict[batsman["player"]["name"]] = 4
         compute_batsman(batsman, score_dict, catch_dict, choice)
-
     return (bat_team, bowl_team)
 
 
@@ -189,6 +196,8 @@ def compute_batsman(batsman, score_dict, catch_dict, choice):
     fours = batsman["s4"]
     sixes = batsman["s6"]
     balls = batsman["balls"]
+    if "Sai S" in name:
+        print(name, runs, balls, fours, sixes)
     sr = 100 if balls == 0 else ((runs * 100) / balls)
     score = (
         runs
@@ -622,16 +631,18 @@ if __name__ == "__main__":
     doc = client.open_by_key(SHEET_ID)
 
     global_score_dict = {}
-    gen_ids = False
-    if gen_ids:
-        set_up_ids()
 
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
         "--game", type=str, default=0, help="Game number (default: Current)"
     )
+    parser.add_argument(
+        "--pgws", action="store_true", help="Print Game Week Info (default: False)"
+    )
     args = parser.parse_args()
+    if args.pgws:
+        set_up_ids()
     folder_path = "ids"
     if "-" in args.game:
         match = re.fullmatch(r"(\d+)-(\d+)", args.game)
@@ -677,8 +688,8 @@ if __name__ == "__main__":
             fun_dict = dict(
                 sorted(fun_dict.items(), key=lambda item: item[1], reverse=True)
             )
-            for k, v in fun_dict.items():
-                print(f"{k}: {v}")
+            # for k, v in fun_dict.items():
+            #     print(f"{k}: {v}")
         print_player_rank_to_sheet(doc, global_score_dict, folder=".")
     else:
         main(
