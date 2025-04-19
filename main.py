@@ -196,8 +196,6 @@ def compute_batsman(batsman, score_dict, catch_dict, choice):
     fours = batsman["s4"]
     sixes = batsman["s6"]
     balls = batsman["balls"]
-    if "Sai S" in name:
-        print(name, runs, balls, fours, sixes)
     sr = 100 if balls == 0 else ((runs * 100) / balls)
     score = (
         runs
@@ -256,7 +254,9 @@ def run_bonus(runs):
 
 def compute_wicket(type, batsman, score_dict, catch_dict):
     if type == "Bowled" or type == "LBW":
-        score_dict[batsman["wicketBowlerName"]] += 8
+        if batsman["wicketBowlerName"] not in score_dict:
+            print(score_dict, batsman["wicketBowlerName"])
+        score_dict[batsman["wicketBowlerName"]] = + 8
     elif type == "Caught" or type == "Caught & Bowled":
         if batsman["wicketCatchName"] not in catch_dict:
             catch_dict[batsman["wicketCatchName"]] = 1
