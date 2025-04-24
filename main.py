@@ -254,9 +254,7 @@ def run_bonus(runs):
 
 def compute_wicket(type, batsman, score_dict, catch_dict):
     if type == "Bowled" or type == "LBW":
-        if batsman["wicketBowlerName"] not in score_dict:
-            print(score_dict, batsman["wicketBowlerName"])
-        score_dict[batsman["wicketBowlerName"]] = + 8
+        score_dict[batsman["wicketBowlerName"]] += 8
     elif type == "Caught" or type == "Caught & Bowled":
         if batsman["wicketCatchName"] not in catch_dict:
             catch_dict[batsman["wicketCatchName"]] = 1
