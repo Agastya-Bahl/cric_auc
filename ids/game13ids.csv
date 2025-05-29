@@ -1,6 +1,7 @@
-13485141,8,KKR      # SRH vs KKR
-13485142,8          # PBKS vs MI
-13485143,8,DC       # DC vs GT
-13485144,8          # CSK vs RR
-13485145,8          # RCB vs SRH
-13485146,8          # GT vs LSG
+13485140,8,RR          # PBKS vs RR
+13485020,8,avg          # (KKR) vs RCB
+13485143,8,CSK  # CSK vs RR
+13485144,8  # MI vs DC
+13485145,8  # GT vs LSG
+13485146,8  # RCB VS SRH
+13485147,9,PBKS  # DC vs PBKS

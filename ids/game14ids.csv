@@ -1,5 +1,6 @@
-13485147,8          # MI vs DC
-13485148,8          # RR vs PBKS
-13485149,9          # RCB vs KKR
-13485150,9          # GT vs CSK
-13485151,9          # LSG vs SRH
+13485143,8,RR   # CSK vs RR
+13485147,9,DC   # DC vs PBKS
+13485148,9  # GT vs CSK
+13485149,9  # KKR vs SRH
+13485150,9  # MI vs PBKS
+13485151,9  # LSG vs RCB

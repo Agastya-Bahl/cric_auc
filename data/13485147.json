@@ -1,0 +1,2519 @@
+{
+    "innings": [
+        {
+            "number": 1,
+            "battingTeam": {
+                "name": "Punjab Kings",
+                "slug": "punjab-kings",
+                "shortName": "PBKS",
+                "gender": "M",
+                "sport": {
+                    "name": "Cricket",
+                    "slug": "cricket",
+                    "id": 62
+                },
+                "userCount": 7355,
+                "nameCode": "PKI",
+                "disabled": false,
+                "national": false,
+                "type": 0,
+                "id": 187776,
+                "teamColors": {
+                    "primary": "#374df5",
+                    "secondary": "#374df5",
+                    "text": "#ffffff"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u0644\u0648\u0643 \u0627\u0644\u0628\u0646\u062c\u0627\u0628",
+                        "hi": "\u092a\u0902\u091c\u093e\u092c \u0915\u093f\u0902\u0917\u094d\u0938",
+                        "bn": "\u09aa\u09be\u099e\u09cd\u099c\u09be\u09ac \u0995\u09bf\u0982\u09b8"
+                    },
+                    "shortNameTranslation": {
+                        "hi": "\u092a\u0940\u092c\u0940\u0915\u0947\u090f\u0938",
+                        "bn": "\u09aa\u09bf\u09ac\u09bf\u0995\u09c7\u098f\u09b8"
+                    }
+                }
+            },
+            "bowlingTeam": {
+                "name": "Delhi Capitals",
+                "slug": "delhi-capitals",
+                "shortName": "DC",
+                "gender": "M",
+                "sport": {
+                    "name": "Cricket",
+                    "slug": "cricket",
+                    "id": 62
+                },
+                "userCount": 7633,
+                "nameCode": "DCA",
+                "national": false,
+                "type": 0,
+                "id": 187841,
+                "teamColors": {
+                    "primary": "#374df5",
+                    "secondary": "#374df5",
+                    "text": "#ffffff"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062f\u0644\u0647\u064a \u0643\u0627\u0628\u064a\u062a\u0644\u0632",
+                        "hi": "\u0926\u093f\u0932\u094d\u0932\u0940 \u0915\u0948\u092a\u093f\u091f\u0932\u094d\u0938",
+                        "bn": "\u09a6\u09bf\u09b2\u09cd\u09b2\u09bf \u0995\u09cd\u09af\u09be\u09aa\u09bf\u099f\u09be\u09b2\u09b8"
+                    },
+                    "shortNameTranslation": {
+                        "hi": "\u0921\u0940\u0938\u0940",
+                        "bn": "\u09a1\u09bf\u09b8\u09bf"
+                    }
+                }
+            },
+            "score": 206,
+            "wickets": 8,
+            "overs": 20,
+            "extra": 8,
+            "wide": 6,
+            "noBall": 2,
+            "bye": 0,
+            "legBye": 0,
+            "penalty": 0,
+            "id": 73101,
+            "bowlingLine": [
+                {
+                    "player": {
+                        "name": "Mukesh Kumar",
+                        "slug": "mukesh-kumar",
+                        "shortName": "M Kumar",
+                        "position": "B",
+                        "jerseyNumber": "49",
+                        "userCount": 61,
+                        "id": 957194,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0648\u0643\u064a\u0634 \u0643\u0648\u0645\u0627\u0631",
+                                "hi": "\u092e\u0941\u0915\u0947\u0936 \u0915\u0941\u092e\u093e\u0930",
+                                "bn": "\u09ae\u09c1\u0995\u09c7\u09b6 \u0995\u09c1\u09ae\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0648\u0643\u064a\u0634 \u0643\u0648\u0645\u0627\u0631",
+                                "hi": "\u092e\u0941\u0915\u0947\u0936 \u0915\u0941\u092e\u093e\u0930",
+                                "bn": "\u09ae\u09c1\u0995\u09c7\u09b6 \u0995\u09c1\u09ae\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "playerName": "M Kumar",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 49,
+                    "wicket": 1,
+                    "wide": 4,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Mustafizur Rahman",
+                        "slug": "mustafizur-rahman",
+                        "shortName": "M Rahman",
+                        "position": "B",
+                        "jerseyNumber": "90",
+                        "userCount": 6754,
+                        "id": 794366,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm fast medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            }
+                        }
+                    },
+                    "playerName": "Mustafizur Rahman",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 33,
+                    "wicket": 3,
+                    "wide": 0,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Mohit Sharma",
+                        "slug": "mohit-sharma",
+                        "shortName": "M Sharma",
+                        "position": "B",
+                        "jerseyNumber": "27",
+                        "userCount": 77,
+                        "id": 786799,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0648\u0647\u064a\u062a \u0634\u0627\u0631\u0645\u0627",
+                                "hi": "\u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e",
+                                "bn": "\u09ae\u09cb\u09b9\u09bf\u09a4 \u09b6\u09b0\u09cd\u09ae\u09be"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0648\u0647\u064a\u062a \u0634\u0627\u0631\u0645\u0627",
+                                "hi": "\u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e",
+                                "bn": "\u09ae\u09cb\u09b9\u09bf\u09a4 \u09b6\u09b0\u09cd\u09ae\u09be"
+                            }
+                        }
+                    },
+                    "playerName": "Mohit Sharma",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 47,
+                    "wicket": 0,
+                    "wide": 1,
+                    "noBall": 1
+                },
+                {
+                    "player": {
+                        "name": "Vipraj Nigam",
+                        "slug": "vipraj-nigam",
+                        "shortName": "V Nigam",
+                        "position": "AR",
+                        "jerseyNumber": "28",
+                        "userCount": 18,
+                        "id": 1963240,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        }
+                    },
+                    "playerName": "V Nigam",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 38,
+                    "wicket": 2,
+                    "wide": 1,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Kuldeep Yadav",
+                        "slug": "kuldeep-yadav",
+                        "shortName": "K Yadav",
+                        "position": "B",
+                        "jerseyNumber": "23",
+                        "userCount": 948,
+                        "id": 786807,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left wrist spin"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            }
+                        }
+                    },
+                    "playerName": "Kuldeep Yadav",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 39,
+                    "wicket": 2,
+                    "wide": 0,
+                    "noBall": 1
+                }
+            ],
+            "battingLine": [
+                {
+                    "player": {
+                        "name": "Priyansh Arya",
+                        "slug": "priyansh-arya",
+                        "shortName": "P Arya",
+                        "position": "BM",
+                        "userCount": 53,
+                        "id": 1211405,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "playerName": "P Arya",
+                    "score": 6,
+                    "balls": 9,
+                    "s4": 1,
+                    "s6": 0,
+                    "fowScore": 8,
+                    "fowOver": 1.5,
+                    "wicketBowler": {
+                        "name": "Mustafizur Rahman",
+                        "slug": "mustafizur-rahman",
+                        "shortName": "M Rahman",
+                        "position": "B",
+                        "jerseyNumber": "90",
+                        "userCount": 6754,
+                        "id": 794366,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm fast medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Mustafizur Rahman",
+                    "wicketCatch": {
+                        "name": "Tristan Stubbs",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "tristan-stubbs",
+                        "shortName": "T Stubbs",
+                        "position": "WK",
+                        "jerseyNumber": "30",
+                        "userCount": 194,
+                        "id": 1212781,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Tristan Stubbs",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Prabhsimran Singh",
+                        "slug": "prabhsimran-singh",
+                        "shortName": "P Singh",
+                        "position": "WK",
+                        "userCount": 50,
+                        "id": 1198756,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        }
+                    },
+                    "playerName": "P Singh",
+                    "score": 28,
+                    "balls": 18,
+                    "s4": 4,
+                    "s6": 1,
+                    "fowScore": 77,
+                    "fowOver": 7.5,
+                    "wicketBowler": {
+                        "name": "Vipraj Nigam",
+                        "slug": "vipraj-nigam",
+                        "shortName": "V Nigam",
+                        "position": "AR",
+                        "jerseyNumber": "28",
+                        "userCount": 18,
+                        "id": 1963240,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        }
+                    },
+                    "wicketBowlerName": "Vipraj Nigam",
+                    "wicketTypeId": 1,
+                    "wicketTypeName": "Bowled"
+                },
+                {
+                    "player": {
+                        "name": "Josh Inglis",
+                        "slug": "josh-inglis",
+                        "shortName": "J Inglis",
+                        "position": "WK",
+                        "jerseyNumber": "48",
+                        "userCount": 141,
+                        "id": 917346,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062c\u0648\u0634 \u0625\u064a\u0646\u063a\u0644\u064a\u0633",
+                                "hi": "\u091c\u094b\u0936 \u0907\u0902\u0917\u094d\u0932\u093f\u0938",
+                                "bn": "\u099c\u09cb\u09b6 \u0987\u0999\u09cd\u0997\u09b2\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062c. \u0625\u064a\u0646\u063a\u0644\u064a\u0633",
+                                "hi": "\u091c\u0947 \u0907\u0902\u0917\u094d\u0932\u093f\u0938",
+                                "bn": "\u099c\u09c7 \u0987\u0982\u09b2\u09bf\u09b6"
+                            }
+                        }
+                    },
+                    "playerName": "Josh Inglis",
+                    "score": 32,
+                    "balls": 12,
+                    "s4": 3,
+                    "s6": 2,
+                    "fowScore": 55,
+                    "fowOver": 5.2,
+                    "wicketBowler": {
+                        "name": "Vipraj Nigam",
+                        "slug": "vipraj-nigam",
+                        "shortName": "V Nigam",
+                        "position": "AR",
+                        "jerseyNumber": "28",
+                        "userCount": 18,
+                        "id": 1963240,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        }
+                    },
+                    "wicketBowlerName": "Vipraj Nigam",
+                    "wicketCatch": {
+                        "name": "Tristan Stubbs",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "tristan-stubbs",
+                        "shortName": "T Stubbs",
+                        "position": "WK",
+                        "jerseyNumber": "30",
+                        "userCount": 194,
+                        "id": 1212781,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Tristan Stubbs",
+                    "wicketTypeId": 4,
+                    "wicketTypeName": "Stumped"
+                },
+                {
+                    "player": {
+                        "name": "Shreyas Iyer",
+                        "slug": "shreyas-iyer",
+                        "shortName": "S Iyer",
+                        "position": "BM",
+                        "jerseyNumber": "96",
+                        "userCount": 3232,
+                        "id": 793972,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "playerName": "S Iyer",
+                    "score": 53,
+                    "balls": 34,
+                    "s4": 5,
+                    "s6": 2,
+                    "fowScore": 172,
+                    "fowOver": 17.2,
+                    "wicketBowler": {
+                        "name": "Kuldeep Yadav",
+                        "slug": "kuldeep-yadav",
+                        "shortName": "K Yadav",
+                        "position": "B",
+                        "jerseyNumber": "23",
+                        "userCount": 948,
+                        "id": 786807,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left wrist spin"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Kuldeep Yadav",
+                    "wicketCatch": {
+                        "name": "Mohit Sharma",
+                        "slug": "mohit-sharma",
+                        "shortName": "M Sharma",
+                        "position": "B",
+                        "jerseyNumber": "27",
+                        "userCount": 77,
+                        "id": 786799,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0648\u0647\u064a\u062a \u0634\u0627\u0631\u0645\u0627",
+                                "hi": "\u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e",
+                                "bn": "\u09ae\u09cb\u09b9\u09bf\u09a4 \u09b6\u09b0\u09cd\u09ae\u09be"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0648\u0647\u064a\u062a \u0634\u0627\u0631\u0645\u0627",
+                                "hi": "\u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e",
+                                "bn": "\u09ae\u09cb\u09b9\u09bf\u09a4 \u09b6\u09b0\u09cd\u09ae\u09be"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Mohit Sharma",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Nehal Wadhera",
+                        "slug": "nehal-wadhera",
+                        "shortName": "N Wadhera",
+                        "position": "BM",
+                        "userCount": 43,
+                        "id": 957393,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Leg break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0646\u0647\u0627\u0644 \u0648\u0627\u062f\u0647\u064a\u0631\u0627",
+                                "hi": "\u0928\u0947\u0939\u0932 \u0935\u0922\u0947\u0930\u093e",
+                                "bn": "\u09a8\u09c7\u09b9\u09be\u09b2 \u0993\u09af\u09bc\u09be\u09a7\u09c7\u09b0\u09be"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0646. \u0648\u0627\u062f\u0647\u064a\u0631\u0627",
+                                "hi": "\u090f\u0928 \u0935\u0922\u0947\u0930\u093e",
+                                "bn": "\u098f\u09a8 \u0993\u09af\u09bc\u09be\u09a7\u09c7\u09b0\u09be"
+                            }
+                        }
+                    },
+                    "playerName": "N Wadhera",
+                    "score": 16,
+                    "balls": 16,
+                    "s4": 1,
+                    "s6": 0,
+                    "fowScore": 118,
+                    "fowOver": 12.3,
+                    "wicketBowler": {
+                        "name": "Mukesh Kumar",
+                        "slug": "mukesh-kumar",
+                        "shortName": "M Kumar",
+                        "position": "B",
+                        "jerseyNumber": "49",
+                        "userCount": 61,
+                        "id": 957194,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0648\u0643\u064a\u0634 \u0643\u0648\u0645\u0627\u0631",
+                                "hi": "\u092e\u0941\u0915\u0947\u0936 \u0915\u0941\u092e\u093e\u0930",
+                                "bn": "\u09ae\u09c1\u0995\u09c7\u09b6 \u0995\u09c1\u09ae\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0648\u0643\u064a\u0634 \u0643\u0648\u0645\u0627\u0631",
+                                "hi": "\u092e\u0941\u0915\u0947\u0936 \u0915\u0941\u092e\u093e\u0930",
+                                "bn": "\u09ae\u09c1\u0995\u09c7\u09b6 \u0995\u09c1\u09ae\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Mukesh Kumar",
+                    "wicketCatch": {
+                        "name": "Faf du Plessis",
+                        "slug": "faf-du-plessis",
+                        "shortName": "du Plessis",
+                        "position": "BM",
+                        "jerseyNumber": "13",
+                        "userCount": 288,
+                        "id": 786435,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0641\u0627\u0641 \u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u092b\u093e\u092b \u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09ab\u09be\u09ab \u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Faf du Plessis",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Shashank Singh",
+                        "slug": "shashank-singh",
+                        "shortName": "S Singh",
+                        "position": "BM",
+                        "userCount": 44,
+                        "id": 954282,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0627\u0634\u0627\u0646\u0643 \u0633\u064a\u0646\u063a",
+                                "hi": "\u0936\u0936\u093e\u0902\u0915 \u0938\u093f\u0902\u0939",
+                                "bn": "\u09b6\u09b6\u09be\u0999\u09cd\u0995 \u09b8\u09bf\u0982"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634. \u0633\u064a\u0646\u063a",
+                                "hi": "\u090f\u0938 \u0938\u093f\u0902\u0939",
+                                "bn": "\u098f\u09b8 \u09b8\u09bf\u0982"
+                            }
+                        }
+                    },
+                    "playerName": "S Singh",
+                    "score": 11,
+                    "balls": 10,
+                    "s4": 0,
+                    "s6": 0,
+                    "fowScore": 144,
+                    "fowOver": 15.4,
+                    "wicketBowler": {
+                        "name": "Mustafizur Rahman",
+                        "slug": "mustafizur-rahman",
+                        "shortName": "M Rahman",
+                        "position": "B",
+                        "jerseyNumber": "90",
+                        "userCount": 6754,
+                        "id": 794366,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm fast medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Mustafizur Rahman",
+                    "wicketCatch": {
+                        "name": "Tristan Stubbs",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "tristan-stubbs",
+                        "shortName": "T Stubbs",
+                        "position": "WK",
+                        "jerseyNumber": "30",
+                        "userCount": 194,
+                        "id": 1212781,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Tristan Stubbs",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Marcus Stoinis",
+                        "slug": "marcus-stoinis",
+                        "shortName": "M Stoinis",
+                        "position": "AR",
+                        "jerseyNumber": "17",
+                        "userCount": 231,
+                        "id": 787321,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648\u0633 \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u0938 \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09be\u09b8 \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u090f\u092e \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u098f\u09ae \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "playerName": "Marcus Stoinis",
+                    "score": 44,
+                    "balls": 16,
+                    "s4": 3,
+                    "s6": 4,
+                    "wicketTypeId": 8,
+                    "wicketTypeName": "Not out"
+                },
+                {
+                    "player": {
+                        "name": "Azmatullah Omarzai",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "azmatullah-omarzai",
+                        "shortName": "A Omarzai",
+                        "position": "AR",
+                        "jerseyNumber": "9",
+                        "userCount": 275,
+                        "id": 956710,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0639\u0638\u0645\u0629 \u0627\u0644\u0644\u0647 \u0639\u0645\u0631\u0632\u0627\u064a",
+                                "hi": "\u0905\u091c\u093c\u092e\u0924\u0941\u0932\u094d\u0932\u093e\u0939 \u0909\u092e\u0930\u091c\u093c\u0908",
+                                "bn": "\u0986\u099c\u09ae\u09a4\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0993\u09ae\u09b0\u099c\u09be\u0987"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0639. \u0639\u0645\u0631\u0632\u0627\u064a",
+                                "hi": "\u090f \u0909\u092e\u0930\u091c\u093c\u0908",
+                                "bn": "\u098f. \u0993\u09ae\u09b0\u099c\u09be\u0987"
+                            }
+                        }
+                    },
+                    "playerName": "A Omarzai",
+                    "score": 1,
+                    "balls": 3,
+                    "s4": 0,
+                    "s6": 0,
+                    "fowScore": 174,
+                    "fowOver": 17.6,
+                    "wicketBowler": {
+                        "name": "Kuldeep Yadav",
+                        "slug": "kuldeep-yadav",
+                        "shortName": "K Yadav",
+                        "position": "B",
+                        "jerseyNumber": "23",
+                        "userCount": 948,
+                        "id": 786807,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left wrist spin"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Kuldeep Yadav",
+                    "wicketCatch": {
+                        "name": "Sameer Rizvi",
+                        "slug": "sameer-rizvi",
+                        "shortName": "S Rizvi",
+                        "position": "BM",
+                        "jerseyNumber": "16",
+                        "userCount": 27,
+                        "id": 1383785,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "wicketCatchName": "Sameer Rizvi",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Marco Jansen",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "marco-jansen",
+                        "shortName": "M Jansen",
+                        "position": "AR",
+                        "jerseyNumber": "70",
+                        "userCount": 155,
+                        "id": 974526,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Left-arm fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            }
+                        }
+                    },
+                    "playerName": "Marco Jansen",
+                    "score": 0,
+                    "balls": 2,
+                    "s4": 0,
+                    "s6": 0,
+                    "fowScore": 197,
+                    "fowOver": 19.3,
+                    "wicketBowler": {
+                        "name": "Mustafizur Rahman",
+                        "slug": "mustafizur-rahman",
+                        "shortName": "M Rahman",
+                        "position": "B",
+                        "jerseyNumber": "90",
+                        "userCount": 6754,
+                        "id": 794366,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm fast medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Mustafizur Rahman",
+                    "wicketCatch": {
+                        "name": "Tristan Stubbs",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "tristan-stubbs",
+                        "shortName": "T Stubbs",
+                        "position": "WK",
+                        "jerseyNumber": "30",
+                        "userCount": 194,
+                        "id": 1212781,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Tristan Stubbs",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Harpreet Brar",
+                        "slug": "harpreet-brar",
+                        "shortName": "H Brar",
+                        "position": "B",
+                        "userCount": 24,
+                        "id": 980248,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Slow left-arm orthodox"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0647\u0627\u0631\u0628\u0631\u064a\u062a \u0628\u0631\u0627\u0631",
+                                "hi": "\u0939\u0930\u092a\u094d\u0930\u0940\u0924 \u092c\u0930\u093e\u0930",
+                                "bn": "\u09b9\u09b0\u09aa\u09cd\u09b0\u09c0\u09a4 \u09ac\u09cd\u09b0\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0647 \u0628\u0631\u0627\u0631",
+                                "hi": "\u090f\u091a \u092c\u0930\u093e\u0930",
+                                "bn": "\u098f\u0987\u099a \u09ac\u09cd\u09b0\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "playerName": "H Brar",
+                    "score": 7,
+                    "balls": 2,
+                    "s4": 0,
+                    "s6": 1,
+                    "wicketTypeId": 8,
+                    "wicketTypeName": "Not out"
+                },
+                {
+                    "player": {
+                        "name": "Arshdeep Singh",
+                        "slug": "arshdeep-singh",
+                        "shortName": "A Singh",
+                        "position": "B",
+                        "jerseyNumber": "2",
+                        "userCount": 522,
+                        "id": 945909,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm medium fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0623\u0631\u0634\u062f\u064a\u0628 \u0633\u064a\u0646\u063a",
+                                "hi": "\u0905\u0930\u094d\u0936\u0926\u0940\u092a \u0938\u093f\u0902\u0939",
+                                "bn": "\u0986\u09b0\u09b6\u09a6\u09c0\u09aa \u09b8\u09bf\u0982"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0623. \u0633\u064a\u0646\u063a",
+                                "hi": "\u090f \u0938\u093f\u0902\u0939",
+                                "bn": "\u098f \u09b8\u09bf\u0982"
+                            }
+                        }
+                    },
+                    "playerName": "Arshdeep Singh",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                },
+                {
+                    "player": {
+                        "name": "Praveen Dubey",
+                        "slug": "pravin-dubey",
+                        "shortName": "P Dubey",
+                        "position": "B",
+                        "userCount": 12,
+                        "id": 1198754,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0628\u0631\u0627\u0641\u064a\u0646 \u062f\u0648\u0628\u0627\u064a",
+                                "hi": "\u092a\u094d\u0930\u0935\u0940\u0923 \u0926\u0941\u092c\u0947",
+                                "bn": "\u09aa\u09cd\u09b0\u09ac\u09c0\u09a3 \u09a6\u09c1\u09ac\u09c7"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0628. \u062f\u0648\u0628\u0627\u064a",
+                                "hi": "\u092a\u0940 \u0926\u0941\u092c\u0947",
+                                "bn": "\u09aa\u09bf \u09a6\u09c1\u09ac\u09c7"
+                            }
+                        }
+                    },
+                    "playerName": "P Dubey",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                }
+            ],
+            "partnerships": [
+                {
+                    "player1": {
+                        "name": "Priyansh Arya",
+                        "slug": "priyansh-arya",
+                        "shortName": "P Arya",
+                        "position": "BM",
+                        "userCount": 53,
+                        "id": 1211405,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "player2": {
+                        "name": "Prabhsimran Singh",
+                        "slug": "prabhsimran-singh",
+                        "shortName": "P Singh",
+                        "position": "WK",
+                        "userCount": 50,
+                        "id": 1198756,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        }
+                    },
+                    "score": 8,
+                    "balls": 11
+                },
+                {
+                    "player1": {
+                        "name": "Josh Inglis",
+                        "slug": "josh-inglis",
+                        "shortName": "J Inglis",
+                        "position": "WK",
+                        "jerseyNumber": "48",
+                        "userCount": 141,
+                        "id": 917346,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062c\u0648\u0634 \u0625\u064a\u0646\u063a\u0644\u064a\u0633",
+                                "hi": "\u091c\u094b\u0936 \u0907\u0902\u0917\u094d\u0932\u093f\u0938",
+                                "bn": "\u099c\u09cb\u09b6 \u0987\u0999\u09cd\u0997\u09b2\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062c. \u0625\u064a\u0646\u063a\u0644\u064a\u0633",
+                                "hi": "\u091c\u0947 \u0907\u0902\u0917\u094d\u0932\u093f\u0938",
+                                "bn": "\u099c\u09c7 \u0987\u0982\u09b2\u09bf\u09b6"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Prabhsimran Singh",
+                        "slug": "prabhsimran-singh",
+                        "shortName": "P Singh",
+                        "position": "WK",
+                        "userCount": 50,
+                        "id": 1198756,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        }
+                    },
+                    "score": 47,
+                    "balls": 21
+                },
+                {
+                    "player1": {
+                        "name": "Shreyas Iyer",
+                        "slug": "shreyas-iyer",
+                        "shortName": "S Iyer",
+                        "position": "BM",
+                        "jerseyNumber": "96",
+                        "userCount": 3232,
+                        "id": 793972,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Prabhsimran Singh",
+                        "slug": "prabhsimran-singh",
+                        "shortName": "P Singh",
+                        "position": "WK",
+                        "userCount": 50,
+                        "id": 1198756,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        }
+                    },
+                    "score": 22,
+                    "balls": 16
+                },
+                {
+                    "player1": {
+                        "name": "Shreyas Iyer",
+                        "slug": "shreyas-iyer",
+                        "shortName": "S Iyer",
+                        "position": "BM",
+                        "jerseyNumber": "96",
+                        "userCount": 3232,
+                        "id": 793972,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Nehal Wadhera",
+                        "slug": "nehal-wadhera",
+                        "shortName": "N Wadhera",
+                        "position": "BM",
+                        "userCount": 43,
+                        "id": 957393,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Leg break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0646\u0647\u0627\u0644 \u0648\u0627\u062f\u0647\u064a\u0631\u0627",
+                                "hi": "\u0928\u0947\u0939\u0932 \u0935\u0922\u0947\u0930\u093e",
+                                "bn": "\u09a8\u09c7\u09b9\u09be\u09b2 \u0993\u09af\u09bc\u09be\u09a7\u09c7\u09b0\u09be"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0646. \u0648\u0627\u062f\u0647\u064a\u0631\u0627",
+                                "hi": "\u090f\u0928 \u0935\u0922\u0947\u0930\u093e",
+                                "bn": "\u098f\u09a8 \u0993\u09af\u09bc\u09be\u09a7\u09c7\u09b0\u09be"
+                            }
+                        }
+                    },
+                    "score": 41,
+                    "balls": 28
+                },
+                {
+                    "player1": {
+                        "name": "Shreyas Iyer",
+                        "slug": "shreyas-iyer",
+                        "shortName": "S Iyer",
+                        "position": "BM",
+                        "jerseyNumber": "96",
+                        "userCount": 3232,
+                        "id": 793972,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Shashank Singh",
+                        "slug": "shashank-singh",
+                        "shortName": "S Singh",
+                        "position": "BM",
+                        "userCount": 44,
+                        "id": 954282,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0627\u0634\u0627\u0646\u0643 \u0633\u064a\u0646\u063a",
+                                "hi": "\u0936\u0936\u093e\u0902\u0915 \u0938\u093f\u0902\u0939",
+                                "bn": "\u09b6\u09b6\u09be\u0999\u09cd\u0995 \u09b8\u09bf\u0982"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634. \u0633\u064a\u0646\u063a",
+                                "hi": "\u090f\u0938 \u0938\u093f\u0902\u0939",
+                                "bn": "\u098f\u09b8 \u09b8\u09bf\u0982"
+                            }
+                        }
+                    },
+                    "score": 26,
+                    "balls": 19
+                },
+                {
+                    "player1": {
+                        "name": "Shreyas Iyer",
+                        "slug": "shreyas-iyer",
+                        "shortName": "S Iyer",
+                        "position": "BM",
+                        "jerseyNumber": "96",
+                        "userCount": 3232,
+                        "id": 793972,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634\u0631\u064a\u0627\u0633 \u0622\u064a\u0631",
+                                "hi": "\u0936\u094d\u0930\u0947\u092f\u0938 \u0905\u092f\u094d\u092f\u0930",
+                                "bn": "\u09b6\u09cd\u09b0\u09c7\u09af\u09bc\u09be\u09b8 \u0986\u0987\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Marcus Stoinis",
+                        "slug": "marcus-stoinis",
+                        "shortName": "M Stoinis",
+                        "position": "AR",
+                        "jerseyNumber": "17",
+                        "userCount": 231,
+                        "id": 787321,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648\u0633 \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u0938 \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09be\u09b8 \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u090f\u092e \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u098f\u09ae \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "score": 28,
+                    "balls": 10
+                },
+                {
+                    "player1": {
+                        "name": "Azmatullah Omarzai",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "azmatullah-omarzai",
+                        "shortName": "A Omarzai",
+                        "position": "AR",
+                        "jerseyNumber": "9",
+                        "userCount": 275,
+                        "id": 956710,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0639\u0638\u0645\u0629 \u0627\u0644\u0644\u0647 \u0639\u0645\u0631\u0632\u0627\u064a",
+                                "hi": "\u0905\u091c\u093c\u092e\u0924\u0941\u0932\u094d\u0932\u093e\u0939 \u0909\u092e\u0930\u091c\u093c\u0908",
+                                "bn": "\u0986\u099c\u09ae\u09a4\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0993\u09ae\u09b0\u099c\u09be\u0987"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0639. \u0639\u0645\u0631\u0632\u0627\u064a",
+                                "hi": "\u090f \u0909\u092e\u0930\u091c\u093c\u0908",
+                                "bn": "\u098f. \u0993\u09ae\u09b0\u099c\u09be\u0987"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Marcus Stoinis",
+                        "slug": "marcus-stoinis",
+                        "shortName": "M Stoinis",
+                        "position": "AR",
+                        "jerseyNumber": "17",
+                        "userCount": 231,
+                        "id": 787321,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648\u0633 \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u0938 \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09be\u09b8 \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u090f\u092e \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u098f\u09ae \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "score": 2,
+                    "balls": 4
+                },
+                {
+                    "player1": {
+                        "name": "Marco Jansen",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "marco-jansen",
+                        "shortName": "M Jansen",
+                        "position": "AR",
+                        "jerseyNumber": "70",
+                        "userCount": 155,
+                        "id": 974526,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Left-arm fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Marcus Stoinis",
+                        "slug": "marcus-stoinis",
+                        "shortName": "M Stoinis",
+                        "position": "AR",
+                        "jerseyNumber": "17",
+                        "userCount": 231,
+                        "id": 787321,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648\u0633 \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u0938 \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09be\u09b8 \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u090f\u092e \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u098f\u09ae \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "score": 23,
+                    "balls": 10
+                },
+                {
+                    "player1": {
+                        "name": "Harpreet Brar",
+                        "slug": "harpreet-brar",
+                        "shortName": "H Brar",
+                        "position": "B",
+                        "userCount": 24,
+                        "id": 980248,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Slow left-arm orthodox"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0647\u0627\u0631\u0628\u0631\u064a\u062a \u0628\u0631\u0627\u0631",
+                                "hi": "\u0939\u0930\u092a\u094d\u0930\u0940\u0924 \u092c\u0930\u093e\u0930",
+                                "bn": "\u09b9\u09b0\u09aa\u09cd\u09b0\u09c0\u09a4 \u09ac\u09cd\u09b0\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0647 \u0628\u0631\u0627\u0631",
+                                "hi": "\u090f\u091a \u092c\u0930\u093e\u0930",
+                                "bn": "\u098f\u0987\u099a \u09ac\u09cd\u09b0\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Marcus Stoinis",
+                        "slug": "marcus-stoinis",
+                        "shortName": "M Stoinis",
+                        "position": "AR",
+                        "jerseyNumber": "17",
+                        "userCount": 231,
+                        "id": 787321,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648\u0633 \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u0938 \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09be\u09b8 \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u090f\u092e \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u098f\u09ae \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "score": 9,
+                    "balls": 3
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "battingTeam": {
+                "name": "Delhi Capitals",
+                "slug": "delhi-capitals",
+                "shortName": "DC",
+                "gender": "M",
+                "sport": {
+                    "name": "Cricket",
+                    "slug": "cricket",
+                    "id": 62
+                },
+                "userCount": 7633,
+                "nameCode": "DCA",
+                "national": false,
+                "type": 0,
+                "id": 187841,
+                "teamColors": {
+                    "primary": "#374df5",
+                    "secondary": "#374df5",
+                    "text": "#ffffff"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062f\u0644\u0647\u064a \u0643\u0627\u0628\u064a\u062a\u0644\u0632",
+                        "hi": "\u0926\u093f\u0932\u094d\u0932\u0940 \u0915\u0948\u092a\u093f\u091f\u0932\u094d\u0938",
+                        "bn": "\u09a6\u09bf\u09b2\u09cd\u09b2\u09bf \u0995\u09cd\u09af\u09be\u09aa\u09bf\u099f\u09be\u09b2\u09b8"
+                    },
+                    "shortNameTranslation": {
+                        "hi": "\u0921\u0940\u0938\u0940",
+                        "bn": "\u09a1\u09bf\u09b8\u09bf"
+                    }
+                }
+            },
+            "bowlingTeam": {
+                "name": "Punjab Kings",
+                "slug": "punjab-kings",
+                "shortName": "PBKS",
+                "gender": "M",
+                "sport": {
+                    "name": "Cricket",
+                    "slug": "cricket",
+                    "id": 62
+                },
+                "userCount": 7355,
+                "nameCode": "PKI",
+                "disabled": false,
+                "national": false,
+                "type": 0,
+                "id": 187776,
+                "teamColors": {
+                    "primary": "#374df5",
+                    "secondary": "#374df5",
+                    "text": "#ffffff"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u0644\u0648\u0643 \u0627\u0644\u0628\u0646\u062c\u0627\u0628",
+                        "hi": "\u092a\u0902\u091c\u093e\u092c \u0915\u093f\u0902\u0917\u094d\u0938",
+                        "bn": "\u09aa\u09be\u099e\u09cd\u099c\u09be\u09ac \u0995\u09bf\u0982\u09b8"
+                    },
+                    "shortNameTranslation": {
+                        "hi": "\u092a\u0940\u092c\u0940\u0915\u0947\u090f\u0938",
+                        "bn": "\u09aa\u09bf\u09ac\u09bf\u0995\u09c7\u098f\u09b8"
+                    }
+                }
+            },
+            "score": 208,
+            "wickets": 4,
+            "overs": 19.3,
+            "extra": 8,
+            "wide": 3,
+            "noBall": 1,
+            "bye": 0,
+            "legBye": 4,
+            "penalty": 0,
+            "id": 73111,
+            "bowlingLine": [
+                {
+                    "player": {
+                        "name": "Arshdeep Singh",
+                        "slug": "arshdeep-singh",
+                        "shortName": "A Singh",
+                        "position": "B",
+                        "jerseyNumber": "2",
+                        "userCount": 522,
+                        "id": 945909,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm medium fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0623\u0631\u0634\u062f\u064a\u0628 \u0633\u064a\u0646\u063a",
+                                "hi": "\u0905\u0930\u094d\u0936\u0926\u0940\u092a \u0938\u093f\u0902\u0939",
+                                "bn": "\u0986\u09b0\u09b6\u09a6\u09c0\u09aa \u09b8\u09bf\u0982"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0623. \u0633\u064a\u0646\u063a",
+                                "hi": "\u090f \u0938\u093f\u0902\u0939",
+                                "bn": "\u098f \u09b8\u09bf\u0982"
+                            }
+                        }
+                    },
+                    "playerName": "Arshdeep Singh",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 35,
+                    "wicket": 0,
+                    "wide": 0,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Azmatullah Omarzai",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "azmatullah-omarzai",
+                        "shortName": "A Omarzai",
+                        "position": "AR",
+                        "jerseyNumber": "9",
+                        "userCount": 275,
+                        "id": 956710,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0639\u0638\u0645\u0629 \u0627\u0644\u0644\u0647 \u0639\u0645\u0631\u0632\u0627\u064a",
+                                "hi": "\u0905\u091c\u093c\u092e\u0924\u0941\u0932\u094d\u0932\u093e\u0939 \u0909\u092e\u0930\u091c\u093c\u0908",
+                                "bn": "\u0986\u099c\u09ae\u09a4\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0993\u09ae\u09b0\u099c\u09be\u0987"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0639. \u0639\u0645\u0631\u0632\u0627\u064a",
+                                "hi": "\u090f \u0909\u092e\u0930\u091c\u093c\u0908",
+                                "bn": "\u098f. \u0993\u09ae\u09b0\u099c\u09be\u0987"
+                            }
+                        }
+                    },
+                    "playerName": "A Omarzai",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 46,
+                    "wicket": 0,
+                    "wide": 0,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Harpreet Brar",
+                        "slug": "harpreet-brar",
+                        "shortName": "H Brar",
+                        "position": "B",
+                        "userCount": 24,
+                        "id": 980248,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Slow left-arm orthodox"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0647\u0627\u0631\u0628\u0631\u064a\u062a \u0628\u0631\u0627\u0631",
+                                "hi": "\u0939\u0930\u092a\u094d\u0930\u0940\u0924 \u092c\u0930\u093e\u0930",
+                                "bn": "\u09b9\u09b0\u09aa\u09cd\u09b0\u09c0\u09a4 \u09ac\u09cd\u09b0\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0647 \u0628\u0631\u0627\u0631",
+                                "hi": "\u090f\u091a \u092c\u0930\u093e\u0930",
+                                "bn": "\u098f\u0987\u099a \u09ac\u09cd\u09b0\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "playerName": "H Brar",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 41,
+                    "wicket": 2,
+                    "wide": 1,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Marco Jansen",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "marco-jansen",
+                        "shortName": "M Jansen",
+                        "position": "AR",
+                        "jerseyNumber": "70",
+                        "userCount": 155,
+                        "id": 974526,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Left-arm fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            }
+                        }
+                    },
+                    "playerName": "Marco Jansen",
+                    "over": 4,
+                    "maiden": 0,
+                    "run": 41,
+                    "wicket": 1,
+                    "wide": 1,
+                    "noBall": 1
+                },
+                {
+                    "player": {
+                        "name": "Praveen Dubey",
+                        "slug": "pravin-dubey",
+                        "shortName": "P Dubey",
+                        "position": "B",
+                        "userCount": 12,
+                        "id": 1198754,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0628\u0631\u0627\u0641\u064a\u0646 \u062f\u0648\u0628\u0627\u064a",
+                                "hi": "\u092a\u094d\u0930\u0935\u0940\u0923 \u0926\u0941\u092c\u0947",
+                                "bn": "\u09aa\u09cd\u09b0\u09ac\u09c0\u09a3 \u09a6\u09c1\u09ac\u09c7"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0628. \u062f\u0648\u0628\u0627\u064a",
+                                "hi": "\u092a\u0940 \u0926\u0941\u092c\u0947",
+                                "bn": "\u09aa\u09bf \u09a6\u09c1\u09ac\u09c7"
+                            }
+                        }
+                    },
+                    "playerName": "P Dubey",
+                    "over": 2,
+                    "maiden": 0,
+                    "run": 20,
+                    "wicket": 1,
+                    "wide": 0,
+                    "noBall": 0
+                },
+                {
+                    "player": {
+                        "name": "Marcus Stoinis",
+                        "slug": "marcus-stoinis",
+                        "shortName": "M Stoinis",
+                        "position": "AR",
+                        "jerseyNumber": "17",
+                        "userCount": 231,
+                        "id": 787321,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648\u0633 \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u0938 \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09be\u09b8 \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u062a\u0648\u064a\u0646\u064a\u0633",
+                                "hi": "\u090f\u092e \u0938\u094d\u091f\u094b\u0907\u0928\u093f\u0938",
+                                "bn": "\u098f\u09ae \u09b8\u09cd\u099f\u09af\u09bc\u09a8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "playerName": "Marcus Stoinis",
+                    "over": 1.3,
+                    "maiden": 0,
+                    "run": 21,
+                    "wicket": 0,
+                    "wide": 1,
+                    "noBall": 0
+                }
+            ],
+            "battingLine": [
+                {
+                    "player": {
+                        "name": "KL Rahul",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "kl-rahul",
+                        "shortName": "Rahul",
+                        "position": "WK",
+                        "jerseyNumber": "1",
+                        "userCount": 3219,
+                        "id": 786519,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u064a \u0625\u0644 \u0631\u0627\u0647\u0648\u0644",
+                                "hi": "\u0915\u0947\u090f\u0932 \u0930\u093e\u0939\u0941\u0932",
+                                "bn": "\u0995\u09c7\u098f\u09b2 \u09b0\u09be\u09b9\u09c1\u09b2"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643. \u0644. \u0631\u0627\u0647\u0648\u0644",
+                                "hi": "\u0915\u0947\u090f\u0932 \u0930\u093e\u0939\u0941\u0932",
+                                "bn": "\u0995\u09c7\u098f\u09b2 \u09b0\u09be\u09b9\u09c1\u09b2"
+                            }
+                        }
+                    },
+                    "playerName": "KL Rahul",
+                    "score": 35,
+                    "balls": 21,
+                    "s4": 6,
+                    "s6": 1,
+                    "fowScore": 55,
+                    "fowOver": 5.3,
+                    "wicketBowler": {
+                        "name": "Marco Jansen",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "marco-jansen",
+                        "shortName": "M Jansen",
+                        "position": "AR",
+                        "jerseyNumber": "70",
+                        "userCount": 155,
+                        "id": 974526,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Left-arm fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0627\u0631\u0643\u0648 \u062c\u0627\u0646\u0633\u0646",
+                                "hi": "\u092e\u093e\u0930\u094d\u0915\u094b \u091c\u0948\u0928\u094d\u0938\u0928",
+                                "bn": "\u09ae\u09be\u09b0\u09cd\u0995\u09cb \u099c\u09cd\u09af\u09be\u09a8\u09b8\u09c7\u09a8"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Marco Jansen",
+                    "wicketCatch": {
+                        "name": "Shashank Singh",
+                        "slug": "shashank-singh",
+                        "shortName": "S Singh",
+                        "position": "BM",
+                        "userCount": 44,
+                        "id": 954282,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0634\u0627\u0634\u0627\u0646\u0643 \u0633\u064a\u0646\u063a",
+                                "hi": "\u0936\u0936\u093e\u0902\u0915 \u0938\u093f\u0902\u0939",
+                                "bn": "\u09b6\u09b6\u09be\u0999\u09cd\u0995 \u09b8\u09bf\u0982"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0634. \u0633\u064a\u0646\u063a",
+                                "hi": "\u090f\u0938 \u0938\u093f\u0902\u0939",
+                                "bn": "\u098f\u09b8 \u09b8\u09bf\u0982"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Shashank Singh",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Faf du Plessis",
+                        "slug": "faf-du-plessis",
+                        "shortName": "du Plessis",
+                        "position": "BM",
+                        "jerseyNumber": "13",
+                        "userCount": 288,
+                        "id": 786435,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0641\u0627\u0641 \u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u092b\u093e\u092b \u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09ab\u09be\u09ab \u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "playerName": "du Plessis",
+                    "score": 23,
+                    "balls": 15,
+                    "s4": 2,
+                    "s6": 1,
+                    "fowScore": 65,
+                    "fowOver": 6.4,
+                    "wicketBowler": {
+                        "name": "Harpreet Brar",
+                        "slug": "harpreet-brar",
+                        "shortName": "H Brar",
+                        "position": "B",
+                        "userCount": 24,
+                        "id": 980248,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Slow left-arm orthodox"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0647\u0627\u0631\u0628\u0631\u064a\u062a \u0628\u0631\u0627\u0631",
+                                "hi": "\u0939\u0930\u092a\u094d\u0930\u0940\u0924 \u092c\u0930\u093e\u0930",
+                                "bn": "\u09b9\u09b0\u09aa\u09cd\u09b0\u09c0\u09a4 \u09ac\u09cd\u09b0\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0647 \u0628\u0631\u0627\u0631",
+                                "hi": "\u090f\u091a \u092c\u0930\u093e\u0930",
+                                "bn": "\u098f\u0987\u099a \u09ac\u09cd\u09b0\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Harpreet Brar",
+                    "wicketCatch": {
+                        "name": "Priyansh Arya",
+                        "slug": "priyansh-arya",
+                        "shortName": "P Arya",
+                        "position": "BM",
+                        "userCount": 53,
+                        "id": 1211405,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "wicketCatchName": "Priyansh Arya",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Karun Nair",
+                        "slug": "karun-nair",
+                        "shortName": "K Nair",
+                        "position": "BM",
+                        "jerseyNumber": "69",
+                        "userCount": 35,
+                        "id": 787193,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09b0\u09c1\u09a3 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09be\u09b0\u09c1\u09a8 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "playerName": "Karun Nair",
+                    "score": 44,
+                    "balls": 27,
+                    "s4": 5,
+                    "s6": 2,
+                    "fowScore": 155,
+                    "fowOver": 14.6,
+                    "wicketBowler": {
+                        "name": "Harpreet Brar",
+                        "slug": "harpreet-brar",
+                        "shortName": "H Brar",
+                        "position": "B",
+                        "userCount": 24,
+                        "id": 980248,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Slow left-arm orthodox"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0647\u0627\u0631\u0628\u0631\u064a\u062a \u0628\u0631\u0627\u0631",
+                                "hi": "\u0939\u0930\u092a\u094d\u0930\u0940\u0924 \u092c\u0930\u093e\u0930",
+                                "bn": "\u09b9\u09b0\u09aa\u09cd\u09b0\u09c0\u09a4 \u09ac\u09cd\u09b0\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0647 \u0628\u0631\u0627\u0631",
+                                "hi": "\u090f\u091a \u092c\u0930\u093e\u0930",
+                                "bn": "\u098f\u0987\u099a \u09ac\u09cd\u09b0\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Harpreet Brar",
+                    "wicketTypeId": 1,
+                    "wicketTypeName": "Bowled"
+                },
+                {
+                    "player": {
+                        "name": "Sediqullah Atal",
+                        "slug": "sediqullah-atal",
+                        "shortName": "S Atal",
+                        "position": "BM",
+                        "userCount": 79,
+                        "id": 994697,
+                        "cricketPlayerInfo": {
+                            "batting": "Left"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0635\u062f\u064a\u0642\u0627\u0644\u0644\u0647 \u0623\u062a\u0627\u0644",
+                                "hi": "\u0938\u093f\u0926\u094d\u0926\u093f\u0915\u0909\u0932\u094d\u0932\u093e\u0939 \u0905\u091f\u0932",
+                                "bn": "\u09b8\u09bf\u09a6\u09cd\u09a6\u09bf\u0995\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0985\u099f\u09b2"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0635\u062f\u064a\u0642\u0627\u0644\u0644\u0647 \u0623\u062a\u0627\u0644",
+                                "hi": "\u0938\u093f\u0926\u094d\u0926\u093f\u0915\u0909\u0932\u094d\u0932\u093e\u0939 \u0905\u091f\u0932",
+                                "bn": "\u09b8\u09bf\u09a6\u09cd\u09a6\u09bf\u0995\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0985\u099f\u09b2"
+                            }
+                        }
+                    },
+                    "playerName": "Sediqullah Atal",
+                    "score": 22,
+                    "balls": 16,
+                    "s4": 0,
+                    "s6": 2,
+                    "fowScore": 93,
+                    "fowOver": 10.1,
+                    "wicketBowler": {
+                        "name": "Praveen Dubey",
+                        "slug": "pravin-dubey",
+                        "shortName": "P Dubey",
+                        "position": "B",
+                        "userCount": 12,
+                        "id": 1198754,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break googly"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0628\u0631\u0627\u0641\u064a\u0646 \u062f\u0648\u0628\u0627\u064a",
+                                "hi": "\u092a\u094d\u0930\u0935\u0940\u0923 \u0926\u0941\u092c\u0947",
+                                "bn": "\u09aa\u09cd\u09b0\u09ac\u09c0\u09a3 \u09a6\u09c1\u09ac\u09c7"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0628. \u062f\u0648\u0628\u0627\u064a",
+                                "hi": "\u092a\u0940 \u0926\u0941\u092c\u0947",
+                                "bn": "\u09aa\u09bf \u09a6\u09c1\u09ac\u09c7"
+                            }
+                        }
+                    },
+                    "wicketBowlerName": "Praveen Dubey",
+                    "wicketCatch": {
+                        "name": "Arshdeep Singh",
+                        "slug": "arshdeep-singh",
+                        "shortName": "A Singh",
+                        "position": "B",
+                        "jerseyNumber": "2",
+                        "userCount": 522,
+                        "id": 945909,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm medium fast"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0623\u0631\u0634\u062f\u064a\u0628 \u0633\u064a\u0646\u063a",
+                                "hi": "\u0905\u0930\u094d\u0936\u0926\u0940\u092a \u0938\u093f\u0902\u0939",
+                                "bn": "\u0986\u09b0\u09b6\u09a6\u09c0\u09aa \u09b8\u09bf\u0982"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0623. \u0633\u064a\u0646\u063a",
+                                "hi": "\u090f \u0938\u093f\u0902\u0939",
+                                "bn": "\u098f \u09b8\u09bf\u0982"
+                            }
+                        }
+                    },
+                    "wicketCatchName": "Arshdeep Singh",
+                    "wicketTypeId": 3,
+                    "wicketTypeName": "Caught"
+                },
+                {
+                    "player": {
+                        "name": "Sameer Rizvi",
+                        "slug": "sameer-rizvi",
+                        "shortName": "S Rizvi",
+                        "position": "BM",
+                        "jerseyNumber": "16",
+                        "userCount": 27,
+                        "id": 1383785,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "playerName": "S Rizvi",
+                    "score": 58,
+                    "balls": 25,
+                    "s4": 3,
+                    "s6": 5,
+                    "wicketTypeId": 8,
+                    "wicketTypeName": "Not out"
+                },
+                {
+                    "player": {
+                        "name": "Tristan Stubbs",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "tristan-stubbs",
+                        "shortName": "T Stubbs",
+                        "position": "WK",
+                        "jerseyNumber": "30",
+                        "userCount": 194,
+                        "id": 1212781,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            }
+                        }
+                    },
+                    "playerName": "T Stubbs",
+                    "score": 18,
+                    "balls": 14,
+                    "s4": 2,
+                    "s6": 0,
+                    "wicketTypeId": 8,
+                    "wicketTypeName": "Not out"
+                },
+                {
+                    "player": {
+                        "name": "Ashutosh Sharma",
+                        "slug": "ashutosh-sharma",
+                        "shortName": "A Sharma",
+                        "position": "BM",
+                        "jerseyNumber": "77",
+                        "userCount": 44,
+                        "id": 1564804,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        }
+                    },
+                    "playerName": "A Sharma",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                },
+                {
+                    "player": {
+                        "name": "Vipraj Nigam",
+                        "slug": "vipraj-nigam",
+                        "shortName": "V Nigam",
+                        "position": "AR",
+                        "jerseyNumber": "28",
+                        "userCount": 18,
+                        "id": 1963240,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        }
+                    },
+                    "playerName": "V Nigam",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                },
+                {
+                    "player": {
+                        "name": "Kuldeep Yadav",
+                        "slug": "kuldeep-yadav",
+                        "shortName": "K Yadav",
+                        "position": "B",
+                        "jerseyNumber": "23",
+                        "userCount": 948,
+                        "id": 786807,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left wrist spin"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0644\u062f\u064a\u0628 \u064a\u0627\u062f\u0627\u0641",
+                                "hi": "\u0915\u0941\u0932\u0926\u0940\u092a \u092f\u093e\u0926\u0935",
+                                "bn": "\u0995\u09c1\u09b2\u09a6\u09c0\u09aa \u09af\u09be\u09a6\u09ac"
+                            }
+                        }
+                    },
+                    "playerName": "Kuldeep Yadav",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                },
+                {
+                    "player": {
+                        "name": "Mohit Sharma",
+                        "slug": "mohit-sharma",
+                        "shortName": "M Sharma",
+                        "position": "B",
+                        "jerseyNumber": "27",
+                        "userCount": 77,
+                        "id": 786799,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0648\u0647\u064a\u062a \u0634\u0627\u0631\u0645\u0627",
+                                "hi": "\u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e",
+                                "bn": "\u09ae\u09cb\u09b9\u09bf\u09a4 \u09b6\u09b0\u09cd\u09ae\u09be"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0648\u0647\u064a\u062a \u0634\u0627\u0631\u0645\u0627",
+                                "hi": "\u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e",
+                                "bn": "\u09ae\u09cb\u09b9\u09bf\u09a4 \u09b6\u09b0\u09cd\u09ae\u09be"
+                            }
+                        }
+                    },
+                    "playerName": "Mohit Sharma",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                },
+                {
+                    "player": {
+                        "name": "Mustafizur Rahman",
+                        "slug": "mustafizur-rahman",
+                        "shortName": "M Rahman",
+                        "position": "B",
+                        "jerseyNumber": "90",
+                        "userCount": 6754,
+                        "id": 794366,
+                        "cricketPlayerInfo": {
+                            "batting": "Left",
+                            "bowling": "Left-arm fast medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0635\u0637\u0641\u0649 \u0632\u0648\u0631 \u0631\u062d\u0645\u0646",
+                                "hi": "\u092e\u0941\u0938\u094d\u0924\u092b\u093f\u091c\u0941\u0930 \u0930\u0939\u092e\u093e\u0928",
+                                "bn": "\u09ae\u09c1\u09b8\u09cd\u09a4\u09be\u09ab\u09bf\u099c\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8"
+                            }
+                        }
+                    },
+                    "playerName": "Mustafizur Rahman",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                },
+                {
+                    "player": {
+                        "name": "Mukesh Kumar",
+                        "slug": "mukesh-kumar",
+                        "shortName": "M Kumar",
+                        "position": "B",
+                        "jerseyNumber": "49",
+                        "userCount": 61,
+                        "id": 957194,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Right-arm medium"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0648\u0643\u064a\u0634 \u0643\u0648\u0645\u0627\u0631",
+                                "hi": "\u092e\u0941\u0915\u0947\u0936 \u0915\u0941\u092e\u093e\u0930",
+                                "bn": "\u09ae\u09c1\u0995\u09c7\u09b6 \u0995\u09c1\u09ae\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645\u0648\u0643\u064a\u0634 \u0643\u0648\u0645\u0627\u0631",
+                                "hi": "\u092e\u0941\u0915\u0947\u0936 \u0915\u0941\u092e\u093e\u0930",
+                                "bn": "\u09ae\u09c1\u0995\u09c7\u09b6 \u0995\u09c1\u09ae\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "playerName": "M Kumar",
+                    "score": 0,
+                    "balls": 0,
+                    "s4": 0,
+                    "s6": 0,
+                    "wicketTypeId": 9,
+                    "wicketTypeName": "Did not bat"
+                }
+            ],
+            "partnerships": [
+                {
+                    "player1": {
+                        "name": "KL Rahul",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "kl-rahul",
+                        "shortName": "Rahul",
+                        "position": "WK",
+                        "jerseyNumber": "1",
+                        "userCount": 3219,
+                        "id": 786519,
+                        "cricketPlayerInfo": {
+                            "batting": "Right"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u064a \u0625\u0644 \u0631\u0627\u0647\u0648\u0644",
+                                "hi": "\u0915\u0947\u090f\u0932 \u0930\u093e\u0939\u0941\u0932",
+                                "bn": "\u0995\u09c7\u098f\u09b2 \u09b0\u09be\u09b9\u09c1\u09b2"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643. \u0644. \u0631\u0627\u0647\u0648\u0644",
+                                "hi": "\u0915\u0947\u090f\u0932 \u0930\u093e\u0939\u0941\u0932",
+                                "bn": "\u0995\u09c7\u098f\u09b2 \u09b0\u09be\u09b9\u09c1\u09b2"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Faf du Plessis",
+                        "slug": "faf-du-plessis",
+                        "shortName": "du Plessis",
+                        "position": "BM",
+                        "jerseyNumber": "13",
+                        "userCount": 288,
+                        "id": 786435,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0641\u0627\u0641 \u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u092b\u093e\u092b \u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09ab\u09be\u09ab \u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "score": 55,
+                    "balls": 33
+                },
+                {
+                    "player1": {
+                        "name": "Karun Nair",
+                        "slug": "karun-nair",
+                        "shortName": "K Nair",
+                        "position": "BM",
+                        "jerseyNumber": "69",
+                        "userCount": 35,
+                        "id": 787193,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09b0\u09c1\u09a3 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09be\u09b0\u09c1\u09a8 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Faf du Plessis",
+                        "slug": "faf-du-plessis",
+                        "shortName": "du Plessis",
+                        "position": "BM",
+                        "jerseyNumber": "13",
+                        "userCount": 288,
+                        "id": 786435,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Leg break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0641\u0627\u0641 \u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u092b\u093e\u092b \u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09ab\u09be\u09ab \u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f\u0648 \u0628\u0644\u064a\u0633\u064a\u0633",
+                                "hi": "\u0921\u0941 \u092a\u094d\u0932\u0947\u0938\u093f\u0938",
+                                "bn": "\u09a1\u09c1 \u09aa\u09cd\u09b2\u09c7\u09b8\u09bf\u09b8"
+                            }
+                        }
+                    },
+                    "score": 10,
+                    "balls": 7
+                },
+                {
+                    "player1": {
+                        "name": "Karun Nair",
+                        "slug": "karun-nair",
+                        "shortName": "K Nair",
+                        "position": "BM",
+                        "jerseyNumber": "69",
+                        "userCount": 35,
+                        "id": 787193,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09b0\u09c1\u09a3 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09be\u09b0\u09c1\u09a8 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Sediqullah Atal",
+                        "slug": "sediqullah-atal",
+                        "shortName": "S Atal",
+                        "position": "BM",
+                        "userCount": 79,
+                        "id": 994697,
+                        "cricketPlayerInfo": {
+                            "batting": "Left"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0635\u062f\u064a\u0642\u0627\u0644\u0644\u0647 \u0623\u062a\u0627\u0644",
+                                "hi": "\u0938\u093f\u0926\u094d\u0926\u093f\u0915\u0909\u0932\u094d\u0932\u093e\u0939 \u0905\u091f\u0932",
+                                "bn": "\u09b8\u09bf\u09a6\u09cd\u09a6\u09bf\u0995\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0985\u099f\u09b2"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0635\u062f\u064a\u0642\u0627\u0644\u0644\u0647 \u0623\u062a\u0627\u0644",
+                                "hi": "\u0938\u093f\u0926\u094d\u0926\u093f\u0915\u0909\u0932\u094d\u0932\u093e\u0939 \u0905\u091f\u0932",
+                                "bn": "\u09b8\u09bf\u09a6\u09cd\u09a6\u09bf\u0995\u09c1\u09b2\u09cd\u09b2\u09be\u09b9 \u0985\u099f\u09b2"
+                            }
+                        }
+                    },
+                    "score": 28,
+                    "balls": 21
+                },
+                {
+                    "player1": {
+                        "name": "Karun Nair",
+                        "slug": "karun-nair",
+                        "shortName": "K Nair",
+                        "position": "BM",
+                        "jerseyNumber": "69",
+                        "userCount": 35,
+                        "id": 787193,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09b0\u09c1\u09a3 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643\u0627\u0631\u0648\u0646 \u0646\u0627\u064a\u0631",
+                                "hi": "\u0915\u0930\u0941\u0923 \u0928\u093e\u092f\u0930",
+                                "bn": "\u0995\u09be\u09b0\u09c1\u09a8 \u09a8\u09be\u09af\u09bc\u09be\u09b0"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Sameer Rizvi",
+                        "slug": "sameer-rizvi",
+                        "shortName": "S Rizvi",
+                        "position": "BM",
+                        "jerseyNumber": "16",
+                        "userCount": 27,
+                        "id": 1383785,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "score": 62,
+                    "balls": 30
+                },
+                {
+                    "player1": {
+                        "name": "Tristan Stubbs",
+                        "firstName": "",
+                        "lastName": "",
+                        "slug": "tristan-stubbs",
+                        "shortName": "T Stubbs",
+                        "position": "WK",
+                        "jerseyNumber": "30",
+                        "userCount": 194,
+                        "id": 1212781,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062a\u0631\u064a\u0633\u062a\u0627\u0646 \u0633\u062a\u0627\u0628\u0633",
+                                "hi": "\u091f\u094d\u0930\u093f\u0938\u094d\u091f\u0928 \u0938\u094d\u091f\u092c\u094d\u0938",
+                                "bn": "\u099f\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09be\u09a8 \u09b8\u09cd\u099f\u09be\u09ac\u09b8"
+                            }
+                        }
+                    },
+                    "player2": {
+                        "name": "Sameer Rizvi",
+                        "slug": "sameer-rizvi",
+                        "shortName": "S Rizvi",
+                        "position": "BM",
+                        "jerseyNumber": "16",
+                        "userCount": 27,
+                        "id": 1383785,
+                        "cricketPlayerInfo": {
+                            "batting": "Right",
+                            "bowling": "Off break"
+                        }
+                    },
+                    "score": 53,
+                    "balls": 27
+                }
+            ]
+        }
+    ]
+}

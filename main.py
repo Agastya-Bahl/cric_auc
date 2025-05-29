@@ -93,6 +93,10 @@ def get_column_letter(n):
 
 
 def get_data(event_id, score_dict, team_choice):
+    if team_choice == "avg":
+        compute_from_avg(event_id, score_dict)
+        return None
+    
     url = f"https://www.sofascore.com/api/v1/event/{event_id}/innings?nocache={int(time.time())}"
 
     with httpx.Client(http2=True) as client:
@@ -121,6 +125,13 @@ def get_data(event_id, score_dict, team_choice):
     for k, v in catch_dict.items():
         score_dict[k] = score_dict.get(k, 4) + v * 8 + (4 if v >= 3 else 0)
     return data
+
+def compute_from_avg(event_id, score_dict):
+    with open(f"data/{event_id}Avg.csv") as file:
+        reader = csv.reader(file)
+        for line in reader:
+            score_dict[line[0]] = int(line[1])
+    print(score_dict)
 
 
 def compute_innings(inning, score_dict, catch_dict, choice):
@@ -492,6 +503,7 @@ def print_to_sheets(doc, game, data, standings, folder="."):
     else:
         rankings = doc.get_worksheet(game - 2).get_all_values()[:8]
     columns = list(map(list, zip(*rankings)))
+    columns += [['']*8]
     for i, p in enumerate(columns[1][1:], start=1):
         columns[game + 1][i] = standings[p] if p in standings else 0
     columns[game + 1][0] = f"Game {game}"
@@ -616,6 +628,7 @@ def main(
         with open(f"{folder}/points/game{game}points.csv", newline="") as f:
             data = list(csv.reader(f))
         print_to_sheets(doc, game, data, standings, folder=folder)
+    print(score_dict)
 
 
 if __name__ == "__main__":
